@@ -1,0 +1,40 @@
+<div id="home" class="container">
+  <div class="skills-section animate__animated animate__fadeInUp">
+    <h1 class="baslik" style="font-size: 25px; color: #53ffd6">
+      {{ doneProjectTitle }}
+    </h1>
+  </div>
+  <div class="slider-wrapper">
+    <div class="slider">
+      @for (item of source1; track item; let i = $index) {
+      <img id="BekerE{{ i + 1 }}" src="{{ item }}" alt="" />
+      {{ i + 1 }} {{ item }}
+      }
+    </div>
+    <div class="card">
+      <p>
+        Geçmiş projelermizde tüm elektrik tesisatı arıza bakım ve onarım dahil olmak üzere bunun yanı sıra, gerekli pano kurulumu ve santral işlemleri, ışıklandırma işlemleri,otomatik kapı ve diafon sistemleri yapılmıştır.
+      </p>
+    </div>
+  </div>
+
+  <div id="skills-section" class="skills-section animate__animated animate__fadeInUp">
+    <h1 class="baslik" style="font-size: 25px; color: #53ffd6">
+      {{ currentProjectTitle }}
+    </h1>
+  </div>
+  <div class="slider-wrapper">
+    <div class="slider">
+      <div class="slider">
+        @for (item of source2; track item; let i = $index) {
+        <img id="BekerE{{ i + 1 }}" src="{{ item }}" alt="" />
+        }
+      </div>
+    </div>
+    <div class="card">
+      <p>
+        Devam eden projemizde tüm elektrik tesisatı, gerekli pano kurulumu ve santral işlemleri, ışıklandırma işlemleri,otomatik kapı ve diafon sistemleri yapılmaktadır.
+      </p>
+    </div>
+  </div>
+</div>
